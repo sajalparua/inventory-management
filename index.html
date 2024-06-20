@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="">
+    <title>dashboard</title>
+
+</head>
+
+<body>
+    <div class="mainpage  d-flex ">
+        <!-- left menu -->
+        <div class="leftmenu  ">
+            <ul class=" mainul  p-0">
+               <a class="text-decoration-none" href="login.html"><li class="list-unstyled p-4  d-block  d-sm-block  d-md-block d-lg-flex">
+                    <i class="   smile fa-regular fa-face-smile fa-lg m-lg-3"></i>
+                    <h5 class="d-none d-md-none d-lg-flex">SB ADMIN</h5>
+                </li></a> 
+                <div class="fake"></div>
+
+                <li class="      list-unstyled m-1  m-sm-1  m-md-1 m-lg-3 d-block ">
+                    <a class=" text-decoration-none   " href="# ">
+                        <div class="  list d-block  d-sm-block  d-md-block d-lg-flex ">
+                            <i class=" dashicon fa-solid fa-gauge-high "></i>
+                             <h6 class=" ">dashboard</h6>
+                        </div>
+                    </a>
+                </li>
+                <div class="fake"></div>
+                <li class="   list-unstyled  m-1 m-sm-1  m-lg-3  m-md-1  d-block ">
+                    <p class="text ">INTERFACE</p>
+                    <div class=" dropdown dropdown-center   ">
+                        <a class=" anc list  d-block  d-sm-block  d-md-block d-lg-flex" onclick=seenhide1()>
+                            <i class="  fa-solid fa-gears" style="color: #ffffff;"></i>
+                            <h6 class="  text-white">components</h6>
+                        </a>
+
+                        <ul id="dropmenu1" class="  dropmenu">
+                            <li> custom components </li>
+                            <li><a class="dropdown-item" href="#">butten</a></li>
+                            <li><a class="dropdown-item" href="#">card</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="  dropdown dropdown-center   ">
+                        <a class="anc list d-block d-sm-block  d-md-block d-lg-flex" onclick=seenhide2()>
+                            <i class="  fa-solid fa-wrench" style="color: #ffffff;"></i>
+                            <h6 class=" text-white">utilites</h6>
+                        </a>
+
+                        <ul id="dropmenu2" class="  dropmenu">
+                            <li>costum utilites </li>
+                            <li><a class="dropdown-item" href="#">color</a></li>
+                            <li><a class="dropdown-item" href="#">border</a></li>
+                            <li><a class="dropdown-item" href="#">animation </a></li>
+                            <li><a class="dropdown-item" href="#">graph</a></li>
+                            <li><a class="dropdown-item" href="#">responsibilty</a></li>
+                            <li><a class="dropdown-item" href="#">other</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="fake"></div>
+
+                </li>
+                <li class="     list-unstyled m-1 m-sm-1  m-md-1 m-lg-3    d-block  ">
+                    <p class="text ">ADDONS</p>
+                    <div class=" dropdown dropdown-center   ">
+                        <a class="anc  list d-block  d-sm-block  d-md-block d-lg-flex" onclick=seenhide3()>
+                            <i class="fa-regular fa-file" style="color: #ffffff;"></i>
+                            <h6 class="text-white">pages</h6>
+                        </a>
+
+                        <ul id="dropmenu3" class="dropmenu">
+                            <li> login screen</li>
+                            <li><a class="dropdown-item" href="#">login</a></li>
+                            <li><a class="dropdown-item" href="#">register</a></li>
+                            <li><a class="dropdown-item" href="#">forget password</a></li>
+                            <li> other pages</li>
+                            <li><a class="dropdown-item" href="#">404 page </a></li>
+                            <li><a class="dropdown-item" href="#">blank page </a></li>
+                        </ul>
+                    </div>
+                    <div class=" dropdown dropdown-center   ">
+                        <a class="anc list d-block d-sm-block  d-md-block d-lg-flex">
+                            <i class="fa-solid fa-chart-area" style="color: #ffffff;"></i>
+                            <h6 class="text-white">charts</h6>
+                        </a>
+                    </div>
+                    <div class=" dropdown dropdown-center   ">
+                        <a class="anc list d-block d-sm-block  d-md-block d-lg-flex">
+                            <i class="fa-solid fa-table" style="color: #ffffff;"></i>
+                            <h6 class="text-white">tables</h6>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- right dashbosrd  -->
+
+        <div class="rightmenu ">
+            <!-- navbar work -->
+            <nav class="navbar bg-light">
+                <div class="container-fluid  ">
+                    <form class="searchbox    ms-2  d-flex  " role="search">
+                        <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <!-- heading -->
+            <div class="con1 d-flex  d-sm-flex d-md-flex d-lg-flex">
+                <h3 class="ms-3 mt-3  ">Dashboard</h3>
+                <button class="btn bg-info text-white mt-4 ms-auto me-4">generet report</button>
+            </div>
+            <!-- cardline -->
+            <div class="cardline  pt-2 pb-2">
+                <div class="row w-100  m-0  ">
+
+                    <div class=" col-sm-12 col-md-6 col-lg-3 p-3 ">
+                        <div class="card card1 ">
+                            <div class="card-body  ">
+                                <h6 class="card-title text-primary  ps-2">TASKS</h6>
+                                <h4 class="ps-2">$40,000</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-3 p-3 ">
+                        <div class="card card2">
+                            <div class="card-body  ">
+                                <h6 class="card-title text-success  ps-2">TASKS</h6>
+                                <h4 class="ps-2">$40,000</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-3 p-3 ">
+                        <div class="card card3 ">
+                            <div class="card-body  ">
+                                <h6 class="card-title text-info  ps-2">TASKS</h6>
+                                <h4 class="ps-2">$40,000</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-3 p-3 ">
+                        <div class="card card4">
+                            <div class="card-body  ">
+                                <h6 class="card-title text-warning  ps-2">TASKS</h6>
+                                <h4 class="ps-2">$40,000</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <!-- <div class="chartline border">
+                <div class="chartrow row  m-0 bg-danger">
+                
+                    <div class=" leftchart col-lg-8  bg-info">
+                        <div class="chartbox bg-dark">
+                            <section class="charthead bg-warning d-flex">
+                                <h6 class=" ms-2  me-auto">EARNING OVERVIEWS</h6>
+                                <i class="fa-solid fa-ellipsis-vertical me-4" style="color: #ffffff;"></i>
+
+                            </section>
+                            <canvas class="canva" id="myAreaChart"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- Content Row -->
+
+            <div class=" chartline row  m-0">
+
+                <!-- Area Chart -->
+                <div class=" leftchart  col-lg-7  ">
+                    <div class="card shadow mb-4 h-100   ">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header  py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                            <div class="dropdown no-arrow">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis -v fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-header">Dropdown Header:</div>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body  h-100">
+                            <div class="chart-area ">
+                                <canvas class="  " id="myAreaChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pie Chart -->
+                <div class="col-xl-4 col-lg-5 mt-md-2 mt-lg-0  ">
+                    <div class="card  h-100 shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                            <div class="dropdown no-arrow">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-header">Dropdown Header:</div>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart"></canvas>
+                            </div>
+                            <div class="mt-4 text-center small">
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-primary"></i> Direct
+                                </span>
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-success"></i> Social
+                                </span>
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-info"></i> Referral
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project Illustrations devlapment approch -->
+            <div class="con4 row m-0  ">
+                <!-- project block -->
+                <div class="leftblock col-lg-6  p-3  overflow-hidden  d-block">
+                    <div class="pogressbar container p-0 overflow-hidden rounded-2 ">
+                        <div class="pogresshead  "><h6 class=" ms-3">projects></h6></div>
+                        <div class="pogressbody  p-4">
+                            <div class="count mt-2">
+                                <h5>Server Migration</h5>
+                                <h6>25%</h6>
+                            </div>
+                        <div class="progress   ">
+                            
+                            <div class="progress-bar bg-success" role="progressbar" aria-label="Success example"
+                                style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="count mt-4">
+                            <h5>Sales Tracking</h5>
+                            <h6>50%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-label="Info example"
+                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="count mt-4">
+                            <h5>Customer Database</h5>
+                            <h6>75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example"
+                                style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="count mt-4">
+                            <h5>Payout Details</h5>
+                            <h6>90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example"
+                                style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="count mt-4">
+                            <h5> Account Setup</h5>
+                           
+                            <h6>70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-label="Danger example"
+                                style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="colorgroup pt-lg-2 pb-lg-2 row   ">
+                        <div class="col-lg-6 p-2    ">
+                            <div class="colorbox p-lg-1 rounded bg-primary  ">
+                                <h6>primary</h6>
+                                <h6>#4e73df</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-2  ">
+                            <div class="colorbox p-lg-1 rounded bg-success">
+                                <h6>Success</h6>
+                                <h6>#1cc88a</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colorgroup pt-lg-2 pb-lg-2 row  ">
+                        <div class="col-lg-6 p-2    ">
+                            <div class="colorbox p-lg-1 rounded bg-info  ">
+                                <h6>info</h6>
+                                <h6>#36b9cc</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-2  ">
+                            <div class="colorbox p-lg-1 rounded bg-warning">
+                                <h6>warning</h6>
+                                <h6>#36b966</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colorgroup pt-lg-2 pb-lg-2 row  ">
+                        <div class="col-lg-6 p-2    ">
+                            <div class="colorbox p-lg-1 rounded bg-danger  ">
+                                <h6>danger</h6>
+                                <h6>#f6c23e</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-2  ">
+                            <div class="colorbox p-lg-1 rounded bg-secondary">
+                                <h6>Secondary</h6>
+                                <h6>#858796</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colorgroup pt-lg-2 pb-lg-2 row   ">
+                        <div class="col-lg-6 p-2    ">
+                            <div class="colorbox p-lg-1  rounded bg-light  ">
+                                <h6 class="text-dark">light</h6>
+                                <h6 class="text-dark">#f8f9fc</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-2  ">
+                            <div class="colorbox p-lg-1 rounded bg-dark">
+                                <h6>dark</h6>
+                                <h6>#5a5c69</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    </div>
+                <div class="rightblock col-lg-6"></div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="plugins/chart.js/Chart.js"></script>
+    <script src="js/chart-area-demo.js"></script>
+    <script src="js/pai-chart-demo.js"></script>
+    <script src="plugins/chart.js/Chart.bundle.js"></script>
+    <script src="plugins/chart.js/Chart.bundle.min.js"></script>
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

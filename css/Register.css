@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: sty;
+    src: url(fonts/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: sty2;
+    src: url(fonts/SF-Pro-Display-Ultralight.otf);
+}
+.mainpage{
+    width: 100%;
+    height:100vh;
+    /* border:10px solid red; */
+    display: flex;
+    align-items: center;
+
+}
+@media (max-width:1100px) {
+    .mainpage{
+
+        display: block;
+    }}
+.mainpage .heading-box{
+    width: 50%;
+     /* border:2px solid rgb(0, 255, 119); */
+}
+@media (max-width:1100px) {
+    .mainpage .heading-box{
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+         
+    }}
+
+.mainpage .mainimg{
+    display: block;
+    /* border: 2px solid yellow; */
+     width: 400px;
+     margin: auto;
+    }
+ .mainpage .title{
+    /* border:2px solid red; */
+    
+ }
+ .mainpage .title h1{
+     font-family: sty;
+     
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     text-align: center;
+     font-size: 50px;
+     color:#1367db;
+     
+ 
+ 
+ }
+
+
+ .mainpage .loginbox{
+    width:40%;
+    height:80vh;
+  /* border:10px solid green; */
+  text-align: center;
+    
+}
+@media (max-width:1100px) {
+    .mainpage .loginbox{
+        width: 100%;
+         
+    }}
+.mainpage .loginbox img{
+    width:45px;
+    height:35px;
+    /* background: rgb(64, 183, 213); */
+    /* border:1px solid rgb(92, 220, 230); */
+    border-radius: 4px;
+}
+.mainpage .loginbox h1{
+font-family: sty;
+    color: #181f24;
+    font-size: 24px;
+letter-spacing: 2px;
+text-align: center;
+}
+.mainpage .loginbox h6{
+    font-family: sty2;
+    font-size: 18px;
+text-align: center;
+letter-spacing: 1px;
+color:#838c9b;
+
+}
+.mainpage .loginbox form{
+/* border:1px solid rgb(116, 246, 94); */
+ width: 70%;
+ height:60vh;
+ margin: auto;
+ margin-top: 20px;
+ 
+ }
+ .mainpage .loginbox form .name{
+    width: 80% ;
+    height: 10vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0% );
+   /* border: 1px solid #181f24; */
+    display: flex;
+    
+ }
+ .mainpage .loginbox form .name .name1{
+    width: 50%;
+    /* border: 2px solid #1367db; */
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0;
+ }
+ .mainpage .loginbox form .name .name1 input{
+    position:relative;
+    left:2px;
+    width: 80%;
+    font-size: 13px;
+    
+ }
+
+ .mainpage .loginbox form .name .name2{
+width: 50%;
+/* border:2px solid yellow; */
+display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+ }
+ .mainpage .loginbox form .name .name2 input{
+    position: relative;
+    left:16px;
+    width: 80%;
+    font-size: 13px;
+ }
+ .mainpage .loginbox form .name .name2 label{
+    position: relative;
+    left: 20px;
+ }
+
+ .mainpage .loginbox form li{
+ /* border:2px solid rgb(157, 244, 94); */
+ margin-left: 10%;
+     list-style: none;
+     display: block;
+    
+     padding: 3px;
+     
+ }
+ .mainpage .loginbox form li label{
+    font-size: 15px;
+    font-family: sty;
+}
+.mainpage .loginbox form li input{
+    width: 85%;
+    height:38px;
+    margin-top: 4px;
+    font-size: 15px;
+    border: 0.4px solid #838c9b85;
+    /* box-shadow: 0.5px 0.5px 10px rgba(56, 56, 56, 0.412); */
+    outline: none;
+    position: relative;
+    border-radius:4px ;
+    transition: 0.5s;
+     padding-right: 10px;
+    padding-left: 10px; 
+}
+
+.mainpage .loginbox form li input:hover{
+    
+    border: 1px solid #1367db;
+    box-shadow: 0.01px 0.01px 5px rgba(168, 166, 166, 0.803);
+    scale: 1.03;
+    z-index: 1;
+}
+.mainpage .loginbox form .owner{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0% );
+    width: 82%;
+    /* border: 2px solid yellow; */
+    height: 12vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+.mainpage .loginbox form .owner .check{
+    width:15px;
+    height:15px;
+    
+    
+    left:35%;
+    
+    
+}
+.mainpage .loginbox form .owner .rlebel{
+    font-size: 15px;
+    font-family: sty;
+
+    position: absolute;
+    left:25px ;
+}
+.mainpage .loginbox form .owner .store{
+    width:53%;
+    height: auto;
+   /* border: 2px solid green;*/
+    display: block;
+    position: absolute;
+    left:45%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mainpage .loginbox form .owner .store label{
+    /*border: 1px solid#1367db;*/
+    position:relative;
+    right:42px;
+}
+.mainpage .loginbox form .owner .store input{
+    width: 98%;
+    position: relative;
+    right:8px;
+}
+
+.mainpage .loginbox form li input::-webkit-input-placeholder{
+    padding-left: 0px;
+}
+
+
+
+
+
+.mainpage .loginbox .signin{
+
+    width:80%;
+    height:38px;
+    color:white;
+    font-family: sty;
+    font-size: 15px;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+    background: #1367db;
+    position: relative;
+}
+.mainpage .loginbox form .log{
+    /* border:2px solid rgb(243, 60, 130); */
+    position: relative;
+    top:9px;
+    font-size: 14px;
+    font-family: sty;
+}
+
+.mainpage .loginbox form .logn{
+    text-decoration: none;
+    position: relative;
+    top:9px;
+    list-style: none;
+    font-size: 14px;
+    font-family: sty;
+    color:#3f3fd8;
+}

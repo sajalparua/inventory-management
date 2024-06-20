@@ -1,0 +1,308 @@
+   
+   .mainpage{
+   width: 100%;
+   /* background: red; */
+   }
+   .mainpage .leftmenu {
+    width: 15%;
+    background: rgb(34, 133, 226) ;
+    /* border: 1px solid rgb(16, 75, 222); */
+  }
+.mainpage .leftmenu .mainul {
+    /* border: 1px solid rgb(251, 33, 255); */
+  }
+  .mainpage .leftmenu .mainul li{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .mainpage .leftmenu .mainul li .smile {
+    color: rgb(255, 255, 255);
+
+   display: flex;
+   align-items: center;
+      justify-content: center;
+    font-size: 40px;
+    /* border: 1px solid green; */
+
+  }
+  .mainpage .leftmenu .mainul li h5{
+    color:white;
+  }
+
+
+  .mainpage .leftmenu ul .list {
+    display: flex;
+    align-items: baseline;
+
+
+    /* border: 1px solid rgb(237, 255, 71); */
+
+  }
+
+  
+  .mainpage .leftmenu ul .list h5 {
+    color: rgb(255, 255, 255);
+  
+
+  }
+
+  .mainpage .leftmenu ul .fake {
+    width: 80%;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.313);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mainpage .leftmenu ul .list .dashicon {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    color: aliceblue;
+    font-size: 20px;
+    
+    margin-right: 5px;
+    /* border: 1px solid green; */
+  }
+
+  .mainpage .leftmenu ul .list h6 {
+    color: rgb(245, 245, 245);
+    text-align: center;
+    /* border: 1px solid green; */
+  }
+  
+
+  
+
+  .mainpage .leftmenu ul li p {
+    color: rgba(239, 239, 239, 0.587);
+    font-size: 12px;
+    /* border: 1px solid green; */
+  }
+
+  .mainpage .leftmenu ul li .dropdown {
+    /* border: 1px solid green; */
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  .mainpage .leftmenu ul li .dropdown:hover .anc {
+    opacity: 0.4;
+
+  }
+
+  .mainpage .leftmenu ul li .dropdown a {
+    /* background: #8587A4; */
+    text-align: center;
+    text-decoration: none;
+     
+    /* border: 1px solid green; */
+  }
+
+  .mainpage .leftmenu ul li .dropdown a i {
+    margin-right: 4px;
+    /* border: 1px solid green; */
+  }
+
+  .mainpage .leftmenu .mainul li .dropdown .dropmenu{
+    background: rgb(255, 252, 252);
+   display: none;
+    border-radius: 5px;
+    padding-left: 0;
+    /* border: 1px solid green; */
+  }
+
+  .mainpage .leftmenu ul li .dropdown .dropmenu li {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 0;
+    padding: auto;
+    padding: 4px;
+    list-style: none;
+    color: #57575796;
+
+    /* border: 1px solid #16e916; */
+  }
+
+  .mainpage .leftmenu ul li .dropdown .dropmenu li a {
+    font-size: medium;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+    /* border: 1px solid green; */
+
+
+  }
+
+  .mainpage .leftmenu ul li .dropdown .dropmenu li a:hover {
+
+  
+    background: rgba(216, 216, 216, 0.758);
+
+
+  } 
+  .mainpage  .rightmenu{
+    width: 85%;
+    background:#F8F9FC;
+  }
+
+  .mainpage .rightmenu .navbar{
+    box-shadow: 0.02px 0.02px 100px rgba(75, 75, 75, 0.082);
+  }
+  .mainpage .rightmenu .navbar .container-fluid .searchbox {
+
+    width: 50%;
+  }
+
+  @media(max-width: 504px) {
+
+    .mainpage .rightmenu .navbar .container-fluid .searchbox {
+
+      width: 100%;
+    }
+  }
+
+  .mainpage .rightmenu .con1 .btn {
+    width: fit-content;
+    height: fit-content;
+
+
+  }
+  .mainpage .rightmenu .cardline .row .col-sm-12 .card1{
+    border: 0.2px solid rgba(53, 53, 53, 0.237);
+    border-left: 5px solid rgb(47, 78, 255);
+    box-shadow: 0.02px 0.02px 100px rgba(125, 125, 125, 0.347);
+    
+  }
+  .mainpage .rightmenu .cardline .row .col-sm-12 .card2{
+    border: 0.2px solid rgba(53, 53, 53, 0.237);
+    border-left: 5px solid rgb(16, 161, 47);
+    box-shadow: 0.02px 0.02px 100px rgba(125, 125, 125, 0.347);
+  }
+  .mainpage .rightmenu .cardline .row .col-sm-12 .card3{
+    border: 0.2px solid rgba(193, 193, 193, 0.477);
+    border-left: 5px solid rgb(47, 200, 255);
+    box-shadow: 0.02px 0.02px 100px rgba(125, 125, 125, 0.347);
+  }
+  .mainpage .rightmenu .cardline .row .col-sm-12 .card4{
+    border: 0.2px solid rgba(53, 53, 53, 0.237);
+    border-left: 5px solid rgb(255, 185, 33);
+    box-shadow: 0.02px 0.02px 100px rgba(125, 125, 125, 0.347);
+  }
+  .mainpage .rightmenu .chartline  .leftchart .card .card-body .chart-area{
+    /* background: #16e916; */
+   height:258px;
+  }
+  .mainpage .rightmenu .con4 .leftblock .pogressbar{
+    border: 0.2px solid rgba(53, 53, 53, 0.237);
+    box-shadow: 0.02px 0.02px 100px rgba(125, 125, 125, 0.347);
+  }
+  .mainpage .rightmenu .con4 .leftblock .pogressbar .pogresshead{
+    display: flex;
+    width: 100%;
+    height: 40px;
+   border-bottom:0.2px solid rgba(53, 53, 53, 0.237); ;
+    align-items: center;
+  }
+  .mainpage .rightmenu .con4 .leftblock .pogressbar .pogressbody .count{
+    display: flex;
+  }
+  .mainpage .rightmenu .con4 .leftblock .pogressbar .pogressbody .count h5{
+    font-size: 13px;
+    color:#8587A4;
+    font-weight: 400;
+  }
+  .mainpage .rightmenu .con4 .leftblock .pogressbar .pogressbody .count h6{
+   
+margin-left: auto;
+font-size: 13px;
+    color:#8587A4;
+
+  }
+  .mainpage .rightmenu .con4 .leftblock .colorgroup .col-lg-6 .colorbox{
+    border: 0.2px solid rgba(53, 53, 53, 0.237);
+    box-shadow: 0.02px 0.02px 100px rgba(159, 159, 159, 0.432);
+  }
+  .mainpage .rightmenu .con4 .leftblock .colorgroup .col-lg-6 .colorbox h6{
+    margin-left: 5px;
+    color:rgba(235, 235, 235, 0.911);
+    font-weight: 400;
+  }
+
+
+  @media(max-width: 769px) {
+    .mainpage .leftmenu ul .list {
+     
+      
+    }
+    
+    .mainpage .leftmenu ul .list h5{
+      display:none;
+    }
+    .mainpage .leftmenu ul .list {
+     align-items: center;
+     justify-content: center;
+    }
+    .mainpage .leftmenu ul .list h6 {
+
+      font-size: 10px;
+      
+
+    }
+    .mainpage .leftmenu ul .list .dashicon{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      
+    }
+    .mainpage .leftmenu ul .list h6{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      
+    }
+    .mainpage .leftmenu ul li p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .mainpage .leftmenu ul li .dropdown a i{
+      /* border: 1px solid white; */
+      display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+    }
+    .mainpage .leftmenu .mainul li .dropdown .dropmenu{
+      position: absolute;
+      left: 110%;
+      z-index: 4;
+      box-shadow: 0.02px 0.02px 100px rgba(125, 125, 125, 0.347); ;
+      border: 0.2px solid rgba(53, 53, 53, 0.237);
+    }
+
+  }
+
+  @media(max-width: 440px) {
+    
+    .mainpage .leftmenu ul .list h5{
+      display: none;
+    }
+    .mainpage .leftmenu ul .list h6 {
+
+      font-size: 5px;
+
+    }
+    .mainpage .leftmenu ul li p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size:07px;
+    }
+
+  }
+
+  

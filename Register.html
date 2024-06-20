@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=!!, initial-scale=1.0"> -->
+    <title>register</title>
+    <link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+    <div class="mainpage border">
+
+<div class="heading-box">      
+<img  class=mainimg src="imgs/PngItem_1918871.png">
+<div class="title"> <h1>Invento</h1></div>
+</div> 
+<div class="loginbox">
+<img src="imgs/PngItem_1918871.png">
+<h1>Register to create your account</h1>
+<h6>Please enter your details</h6>
+
+<form id="nam">
+    
+<ul class="name">
+<li class="name1"><label>First Name</label><input id="fname"  type="text"  placeholder="Enter your First Name"></li>
+<!-- <span></span> -->
+<li class="name2"><label>Last Name</label><input id="lname" type="text"  placeholder="Enter your Last Name"></li>      
+</ul>
+
+<ul>
+                               
+<li><label>Email</label><br><input id="mail" type="email"  placeholder="Enter your email"></li>
+<li><label>Password</label><br><input id="pass" type="password"  placeholder="Enter your password"></li>
+<li><label> Confirm Password</label><br><input id="confpass" type="password"  placeholder="Confirm your password"></li>
+
+
+</ul>
+<ul class="owner">
+    <label class="rlebel">Are you owner?</label>
+    <input class="check" onclick="op()" type="checkbox" >
+    <li class="store" id="store">
+        <label>Enter Store Name</label>
+        <input id="storname" type="text" placeholder="Enter Your Store Name">
+    </li>
+    
+</ul>
+
+
+
+
+                 
+
+<button type="button"  onclick="submitRegistrationForm()" class="signin" >Register</button>
+<br>
+
+<lavel class="log" >already have account!</lavel> <a class="logn" href="login.html">login</a>          
+</form>
+
+</div>
+
+ </div>
+ <script src="Register.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/inventydasboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+
+<body>
+    <div class="dashboard">
+<div class="strecture1">
+   <h4>recent article transfer</h4> 
+   <h6>last 24 hours</h6>
+<a href="#">view all</a>
+   <!-- table start -->
+<table>
+    <thead>
+        <th>from</th>
+        <th>to</th>
+        <th>status</th>
+        <th>qty</th>
+        <th>date</th>
+        <th>user</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>mainstore</td>
+            <td>doc1</td>
+            <td style="color:black;">loaded</td>
+            <td style="color:black;">5</td>
+            <td>13 aug</td>
+            <td>naven</td>
+        </tr>
+        <tr>
+            <td>mainstore</td>
+            <td>doc1</td>
+            <td style="color:black;">loaded</td>
+            <td style="color:black;">3</td>
+            <td>13 aug</td>
+            <td>naven</td>
+        </tr>
+        <tr>
+            <td>mainstore</td>
+            <td>doc1</td>
+            <td style="color:black;">loaded</td>
+            <td style="color:black;">8</td>
+            <td>13 aug</td>
+            <td>naven</td>
+        </tr>
+        <tr>
+            <td>mainstore</td>
+            <td>doc1</td>
+            <td style="color:black;">loaded</td>
+            <td style="color:black;">18</td>
+            <td>13 aug</td>
+            <td>naven</td>
+        </tr>
+
+
+</tbody>
+</table>
+
+</div>
+<div class="strecture2">
+    <h4>stockes</h4> 
+   <h6>minimum requred items</h6>
+    <div class="container">
+        <div class="donut-chart-block block"> 
+              <div class="donut-chart">
+                  <div id="part1" class="portion-block"><div class="circle"></div></div>
+                  <div id="part2" class="portion-block"><div class="circle"></div></div>
+                  <div id="part3" class="portion-block"><div class="circle"></div></div>
+                  <p class="center"></p>        
+              </div>
+         </div>
+      </div>   
+<ul >
+    <li><h4 id="item1">spices</h4><span>33%</span></li>
+    <li><h4 id="item2">rice</h4><span>33%</span></li>
+    <li><h4 id="item3">sugar</h4><span>34%</span></li>
+
+</ul>
+
+
+</div>
+</div>
+
+   
+
+    </div>
+    
+     
+    <canvas id="doughnutChart"></canvas>  
+   
+</body>
+
+</html>
